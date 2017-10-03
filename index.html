@@ -17,7 +17,7 @@
 
     <!--font awesome icons-->
     <link href="assets/css/font-awesome-4.7.0%25202/css/font-awesome.min.css" rel="stylesheet">
-    
+
     <!--custom css-->
     <link href="assets/css/custom.css" rel="stylesheet">
 
@@ -87,7 +87,7 @@
                                 <h4>Final Price <small>coming soon!</small></h4>
                                 <span>$399</span>
                             </div>
-                        
+
                         </div>
                         <p><a class="btn btn-lg btn-danger" href="/" role="button">Enroll &raquo;</a></p>
                     </div>
@@ -111,8 +111,25 @@
     </section>
 
     <!--boost your income section -->
-    <section>
-
+    <section id="boost-income">
+        <div class="container">
+            <div class="section-header">
+                <img src="assets/img/icon-boost.png" alt="Chart">
+                <h2>How You Can Boost Your Income</h2>
+            </div>
+            <p class="lead">Whether you’re a freelance designer, entrepreneur, employee for a company, code hobbyist, or looking for a new career — this course gives you an immensely valuable skill that will enable you to either:</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Make money on the side</h3>
+                    <p>So you can save up for that Hawaiian vacation you’ve been wanting, help pay off your debt, your car, your mortgage, or simply just to have bonus cash laying around.</p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Create a Full-Time Income</h3>
+                    <p>WordPress developers have options. Many developers make a generous living off of creating custom WordPress themes and selling them on websites like ThemeForest. Freelance designers and developers can also take on WordPress projects and make an extra $1,000 - $5,000+ per month.</p>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <!--who benefits section-->
@@ -156,14 +173,36 @@
     </footer>
 
     <!--modal-->
-    <div>
-
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Simply enter your name and email! As a thank you for joining us, we're going to give you one of our best-selling courses, <em>for free!</em></p>
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only form" for="subsctibe-name">Your first name</label><input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only form" for="subsctibe-email">and your email</label><input type="text" class="form-control" id="subscribe-email" placeholder="and your email">
+                        </div>
+                        <input type="submit" class="btn btn-danger" value="Subscribe!">
+                    </form>
+                    <hr>
+                    <p><small>By providing your email you conesnt to receiving occasional promotional emails &amp; newsletters. <br>No spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <!--bootstrap core javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://use.typekit.net/oru6ekz.js"></script>
     <script>
