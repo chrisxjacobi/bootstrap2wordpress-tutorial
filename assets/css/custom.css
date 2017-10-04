@@ -166,6 +166,21 @@ section h3 {
     text-align: center;
 }
 
+#project-features {
+  text-align: center;
+}
+
+#featurette {
+    background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
+    background-size: cover;
+    text-align-last: center;
+    color: white;
+}
+
+#instructor {
+    background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+
 /*=== CUSTOM ICON SPRITES ===*/
 
 i.ci {
