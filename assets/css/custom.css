@@ -7,6 +7,8 @@ blue gray: #3e4249*/
 
 /*=== GENERAL ===*/
 
+
+
 body {
     margin-top: 50px;
     font-family: 'Lato', 'Raleway', Helvetica, sans-serif;
@@ -15,7 +17,10 @@ body {
 }
 
 
+
 /*=== GLOBAL ===*/
+
+
 
 h1,h2,h3,h4,h5,h6 {
     -webkit-font-smoothing: antialiased;
@@ -137,7 +142,9 @@ blockquote:before {
     display: none;
 }
 
+
 /*=== HERO ===*/
+
 
 #hero {
     background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -206,12 +213,17 @@ blockquote:before {
 
 /*=== LAYOUT ===*/
 
+
 .row + .row {
     margin-top: 20px;
 }
 
 section {
     padding: 80px 0;
+}
+
+section.main-content {
+    padding: 40px 0;
 }
 
 .section-header {
@@ -384,6 +396,7 @@ footer li.signup-link a:hover {
     font-weight: bold;
 }
 
+
 /*=== blog ===*/
 
 
@@ -433,8 +446,8 @@ footer li.signup-link a:hover {
 }
 
 
-
 /*=== widgets ===*/
+
 
 .widget {
     padding: 20px;
@@ -461,7 +474,9 @@ footer li.signup-link a:hover {
     left: 1px;
 }
 
+
 /*=== comments ===*/
+
 
 .post-comments-badge {
     height: 70px;
@@ -534,7 +549,22 @@ footer li.signup-link a:hover {
 }
 
 
+/*=== resources ===*/
+
+
+.resource {
+    width: 31.33333333%;
+    float: left;
+    margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+    margin-right: 0;
+}
+
+
 /*=== CUSTOM ICON SPRITES ===*/
+
 
 i.ci {
     display: inline-block;
@@ -550,7 +580,9 @@ i.ci {
 .ci.ci-instructor { background-position: -160px 0; }
 .ci.ci-device { background-position: -200px 0; }
 
+
 /*== forms ===*/
+
 
 label {
     display: block;
@@ -576,6 +608,36 @@ textarea {
     padding: 6px 12px;
 }
 
+input[type="submit"],
+button[type="submit"] {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    white-space: wrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    outline: none;
+    border: none;
+    background: #aaa;
+}
+
+
 /*=== MEDIA QUERIES ===*/
 
 @media screen and ( max-width : 991px ) {
@@ -597,6 +659,12 @@ textarea {
     #featurette iframe {
         height: 240px;
     }
+    
+    .resource {
+        width: 48%;
+        margin-right: 2%;
+        min-height: 800px;
+    }
 }
 
 @media screen and ( max-width: 568px ) {
@@ -608,6 +676,12 @@ textarea {
     
     #instructor .num span {
         font-size: 16px;
+    }
+    
+    .resource {
+        width: 100%;
+        margin-right: 0;
+        min-height: 0;
     }
 }
 
